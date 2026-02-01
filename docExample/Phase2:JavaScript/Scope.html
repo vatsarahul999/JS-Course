@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <script>
+        {
+            var a = 18;
+            console.log(a);
+        }
+        let x = 10;
+        console.log(a);
+        console.log("x : " + x);
+        function showX() {
+            var f = 34;
+            alert(x);
+            alert(a);
+        }
+
+        function outerFunction() {
+            let w = 78;
+            let e = 90;
+            {
+                let w = 200;
+                console.log(w);
+            }
+            function innerFunction() {
+                let r =54;
+                let e = 200;
+                var w = 500;
+                console.log(w,e,r);
+            }
+            innerFunction();
+           console.log(w,e);
+        }
+        outerFunction();
+    
+    </script>
+</head>
+
+<body>
+    <script>
+        console.log((x + 10));
+        x = x * 10;
+
+    </script>
+    <button onclick="var a = 23;showX()"> Check me </button>
+</body>
+
+</html>
