@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script>
+
+        let user = {
+            name: "Naresh",
+            city: "Housten",
+            isAdmin: true
+        };
+        console.log(user.name);
+        user.name = "Rahul";
+        console.log(user.name);
+  let user2 = {
+            name: "Rahul",
+            city: "Dublin",
+            isAdmin: true,
+            address() {
+                console.log("The city is "+this.city);
+            }
+        };
+        console.log(user2.address());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
