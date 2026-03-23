@@ -1,3 +1,5 @@
+import Person from './person';
+
 function subtract(a: number, b: number): number {
     return a - b;
 }
@@ -14,9 +16,17 @@ function g2(name: string, age?: number): void {
         console.log("Age is defined. It is "+age);
     }
 }
+
+const add = (a:number , b: number): number {
+    return a+b;
+}
+console.log("New ADD:: "+add(1,5));
+
 console.log(subtract(2, 4));
 console.log(subtract(9, 1));
 greeting("P1");
 greeting("P2", 45);
 g2("Ram");
 g2("Ramesh", 12);
+
+Person prn = Person("ABC", 10);

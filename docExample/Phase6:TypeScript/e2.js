@@ -14,6 +14,10 @@ function g2(name, age) {
         console.log("Age is defined. It is " + age);
     }
 }
+var add = function (a, b) {
+    return a + b;
+};
+console.log("New ADD:: " + add(1, 5));
 console.log(subtract(2, 4));
 console.log(subtract(9, 1));
 greeting("P1");
