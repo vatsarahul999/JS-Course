@@ -1,5 +1,4 @@
-import Person from './person';
-
+import { Person } from "./person";
 function subtract(a: number, b: number): number {
     return a - b;
 }
@@ -17,7 +16,7 @@ function g2(name: string, age?: number): void {
     }
 }
 
-const add = (a:number , b: number): number {
+const add = (a:number , b: number): number =>{
     return a+b;
 }
 console.log("New ADD:: "+add(1,5));
@@ -29,4 +28,4 @@ greeting("P2", 45);
 g2("Ram");
 g2("Ramesh", 12);
 
-Person prn = Person("ABC", 10);
+const prn:Person = new Person("ABC", 10);

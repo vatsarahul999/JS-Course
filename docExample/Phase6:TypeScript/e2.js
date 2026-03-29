@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var person_1 = require("./person");
 function subtract(a, b) {
     return a - b;
 }
@@ -24,3 +27,4 @@ greeting("P1");
 greeting("P2", 45);
 g2("Ram");
 g2("Ramesh", 12);
+var prn = new person_1.Person("ABC", 10);

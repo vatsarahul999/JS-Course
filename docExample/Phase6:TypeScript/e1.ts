@@ -68,9 +68,9 @@ let user: {
 };
 user = {age: 10, name:"Abc"};
 
-interface User {
+interface User2{
     name: string;
     age: number;
 }
 
-let u2:User ={age: 13, name:"Abcd"};
+let u2:User2 = {age: 13, name:"Abcd"};
