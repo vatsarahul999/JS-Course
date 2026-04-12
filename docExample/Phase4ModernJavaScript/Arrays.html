@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script>
+        let data = [1, "hello", null];
+        data.forEach(x => console.log(x));
+        //console.log(data[0]);
+        console.log("after double ---------");
+        let dData = data.map(x => x * 2);
+        dData.forEach(x => console.log(x));
+        data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "$12"];
+        console.log("EVEN -----");
+        let evenNumber = data.filter(x => x % 2 === 0);
+        let oddNumber = data.filter(x => x % 2 !== 0);
+        evenNumber.forEach(x => console.log(x));
+                console.log("ODD -----");
+        oddNumber.forEach(x => console.log(x));
+        dData = data.map(x => x * 2);
+        dData.forEach(x => console.log(x));
+        let a = data.find(x => x > 5);
+        console.log(a);
+
+        let sum = data.reduce((a,b)=> a+b, 0);
+        console.log(sum);
+
+        let user = {
+            name: "Naresh",
+            city: "Housten",
+            isAdmin: true
+        };
+        console.log(user.name);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script>
+
+
+        function pushToOutput() {
+            document.getElementById("myTag").addEventListener("input", function () {
+                document.getElementById("Output").innerText = this.value;
+            })
+        }
+    </script>
+
+</head>
+
+<body>
+    <input id="myTag" onclick="pushToOutput()"><br>
+    The value inputed is: <br>
+
+    <p id="Output"></p>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<script src="e2.js">
+    console.log(subtract(2, 3));
+</script>
+<script src="e1.js">
+
+</script>
+<script src="Example.js"></script>
+<script src="animal.js"></script>
+
+
+<script>
+    function update() {
+        const data = document.getElementById("myInput");
+        let target = document.getElementById("target");
+        console.log(data.value);
+        target.value = data.innerHTML;
+        console.log(target.textContent);
+    }
+</script>
+<input placeholder="enter text for button" id="myInput" onkeyup="update()">
+
+<button id="btn"> Click me!</button>
+<h1> You entered </h1>
+<p id="target">
+    Please enter something in input tag
+</p>
+
+
+<script src="updatePage.js"></script>

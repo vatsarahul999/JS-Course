@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title> My HTML Page </title>
+    <style>
+        #para1 {
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: crimson;
+        }
+
+        .para2 {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: blueviolet;
+            color: white
+        }
+    </style>
+    <script>
+        function myFunction() {
+            var myText = document.getElementById("para1").textContent;
+            alert(myText);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>This is heading 1</h1>
+    <p id="para1" onclick="myFunction()">
+        The red line moved across the page. With each millimeter it advanced forward, something changed in the room. The
+        actual change taking place was difficult to perceive, but the change was real. The red line continued
+        relentlessly across the page and the room would never be the same.
+    </p>
+    <p>Spending time at national parks can be an exciting adventure, but this wasn't the type of excitement she was
+        hoping to experience. As she contemplated the situation she found herself in, she knew she'd gotten herself in a
+        little more than she bargained for.<span class="para2"> It wasn't often that she found herself in a tree staring
+            down at a pack of
+            wolves that were looking to make her their next meal. </span></p>
+
+    <p>What were they eating? It didn't taste like anything she had ever eaten before and although she was famished, she
+        didn't dare ask. She knew the answer would be one she didn't want to hear.</p>
+    <H2> This is heading 2/ sub heading</H2>
+    Click<a href="https://www.google.com/"> here to visit google</a>
+    <H3> This is heading 3/ section heading</H3>
+    <form>
+        <table>
+            <tr>
+                <td>Email</td>
+                <td><input placeholder="Email" type="email" required /></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input placeholder="Name" type="text" minlength="3"  /></td>
+            </tr>
+            <TR>
+                <td>Password</td>
+                <Td>
+                    <input placeholder="Password" type="password" minlength="6"  maxlength="10"/>
+                </Td>
+            </TR>
+            <TR>
+                <td>roll Number</td>
+                <Td>
+                    <input placeholder="roll Number" type="number"  />
+                </Td>
+            </TR>
+            <TR>
+                <td>Date of Birth</td>
+                <Td>
+                    <input placeholder="date of birth" type="date" />
+                </Td>
+            </TR>
+            <TR>
+                <Td>
+                    <input type="submit" />
+                </Td>
+            </TR>
+        </table>
+    </form>
+    <input type="button" value="input Button" />
+    <button>Click Me </button>
+</body>
+
+
+</html>
