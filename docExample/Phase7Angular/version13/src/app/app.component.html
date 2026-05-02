@@ -1,5 +1,7 @@
+    <H1>Welcome to {{title }}</H1>
+    <input [(ngModel)]="myTag">
+    <p> {{myTag}} </p>
+    <p> {{myNewVariable}}</p>
+    <button (click)="sayHello()">Say Hello</button>
 
-<H1>Welcome to {{title }}</H1>
- <input [(ngModel)]="myTag">
- <p> {{myTag}} </p>
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
