@@ -1,7 +1,10 @@
-    <H1>Welcome to {{title }}</H1>
-    <input [(ngModel)]="myTag">
-    <p> {{myTag}} </p>
-    <p> {{myNewVariable}}</p>
-    <button (click)="sayHello()">Say Hello</button>
-
-    <router-outlet></router-outlet>
+<H1>Welcome to {{title }}</H1>
+<input [(ngModel)]="myTag">
+<p> {{myTag}} </p>
+<p *ngIf="isVisible"> The value of isVisible is true </p>
+<button (click)="sayHello()">Say Hello</button>
+<ul>
+  <li *ngFor="let name of names">{{ name }}</li>
+</ul>
+<p>{{message}}</p>
+<router-outlet></router-outlet>
