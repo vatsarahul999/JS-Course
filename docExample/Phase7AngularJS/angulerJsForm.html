@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        var app = angular.module("myApp", []);
+<<<<<<< HEAD:docExample/Phase7Angular/angulerJsForm.html
+        app.directive("nameValidator", function () {
+            return {
+                require: "ngModel",
+                link: function (scope, element, attrs, ngModel) {
+                    var nameRegex = /[a-z,A-Z, ]+/gm;
+                    ngModel.$validators.name = function (value) {
+                        return nameRegex.test(value);
+                    }
+                }
+            };
+        });
+        app.controller("myCtrl", function ($scope) {
+            $scope.name = "";
+            $scope.email = "";
+        });
+
+    </script>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="myCtrl">
+        <h1>AngularJS Form Validation Example</h1>
+        <form name="myForm">
+            Name: <input type="text" name="name" ng-model="name" name-validator />
+
+            <p ng-if="myForm.name.$invalid && !myForm.name.$pristine">
+                <span style="color:red">Invalid name</span>
+            </p>
+            <br>
+            Email: <input type="email" name="email" ng-model="email" required />
+            <p ng-if="myForm.email.$invalid && !myForm.email.$pristine">
+                <span style="color:red">Invalid email address.</span>
+            </p>
+            <br>
+        </form>
+    </div>
+</body>
+
+=======
+    </script>
+</head>
+<body ng-app="myApp">
+    <form>>
+    <input type="email" ng-model="email"  required/>
+    </form>
+</body>
+>>>>>>> 5da1283 (Angular 13):docExample/Phase7AngularJS/angulerJsForm.html
+</html>

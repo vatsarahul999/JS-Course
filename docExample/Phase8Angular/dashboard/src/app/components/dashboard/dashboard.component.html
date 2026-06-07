@@ -1,0 +1,16 @@
+<h2> User Details</h2>
+<p>There are {{ users.length }} users.</p>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>City</th>
+    <th>Role</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td>
+    <td>{{ user.city }}</td>
+    <td>{{ user.role }}</td>
+  </tr>
+</table>

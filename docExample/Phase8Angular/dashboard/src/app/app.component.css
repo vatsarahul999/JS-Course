@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 15%;
+  background-color: #d87a1b;
+  height: inherit;  
+}
+
+.content {
+  width: 85%;
+}
+.navbar {
+  background-color: #d0bd13;
+  padding: 10px;
+  height: 20%;
+}
+.dashboard {
+  background-color: #e1ebf5;
+  padding: 20px;
+  height: 80%;
+}

@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+    <script src="./route.js"></script>
+</head>
+<body ng-app="myApp">
+    <h1> Angular Routing Page</h1>
+<<<<<<< HEAD:docExample/Phase7Angular/route.html
+ 
+=======
+    <a href="#!/home">Home</a>
+    <a href="#!/about">About</a>
+>>>>>>> 5da1283 (Angular 13):docExample/Phase7AngularJS/route.html
+    <ng controller="userCtrl">
+        <a href="#!/user/{{$routeParams.id}}">User {{$routeParams.id}}</a>
+    <p ng-view></p>
+</body>
+
+</html>
