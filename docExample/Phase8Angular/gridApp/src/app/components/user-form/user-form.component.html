@@ -1,0 +1,14 @@
+<h1> User Form</h1>
+<label for="name">Name:</label>
+<input type="text" id="name" [(ngModel)]="model.name"> 
+<br>
+<label for="email">Email:</label>
+<input type="email" id="email" [(ngModel)]="model.email">
+<br>
+<label for="city">City:</label>
+<input type="text" id="city" [(ngModel)]="model.city">
+<br>
+<label for="country">Country:</label>
+<input type="text" id="country" [(ngModel)]="model.country">
+<br>
+<button (click)="submit()">Save</button>

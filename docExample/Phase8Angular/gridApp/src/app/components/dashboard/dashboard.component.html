@@ -1,0 +1,28 @@
+<h1> User Details Dashboard</h1>
+<app-user-form [user]="selectedUser" (save)="saveUser($event)"></app-user-form>
+<br>
+
+<ag-grid-angular
+  style="width: 100%; height: 300px;"
+  class="ag-theme-alpine"
+  [rowData]="users"
+  [columnDefs]="columnDefs"
+  >
+</ag-grid-angular>
+<br>
+<table>
+    <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>City</th>
+    <th>Country</th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.city }}</td>
+        <td>{{ user.country }}</td>
+        <td> <button (click)="editUser(user)">Edit</button> </td>
+        <td> <button (click)="deleteUser(user.id)">Delete</button> </td>
+    </tr>
+</table>
