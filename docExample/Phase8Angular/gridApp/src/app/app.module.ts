@@ -7,6 +7,7 @@ import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ActionCellComponent } from './components/action-cell/action-cell.component';
 //import { AgGridModule } from 'ag-grid-angular/lib/ag-grid-angular.module';
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     DashboardComponent,
     UserFormComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    ActionCellComponent
   ],
   imports: [
     BrowserModule,
