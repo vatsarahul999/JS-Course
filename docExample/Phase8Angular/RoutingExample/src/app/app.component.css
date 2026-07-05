@@ -1,0 +1,13 @@
+
+#sidebar{
+  width: 20%;
+  background-color: #3f77ca;
+  height: 100%;
+}
+#container{
+  width: 80%;
+  background-color: #d6dfd4;
+  height: 100%;
+  align-items: left;
+
+}
