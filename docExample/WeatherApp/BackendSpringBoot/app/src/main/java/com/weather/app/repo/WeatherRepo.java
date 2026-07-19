@@ -9,5 +9,4 @@ import java.util.List;
 
 public interface WeatherRepo extends JpaRepository<Weather,Integer> {
 
-    List<Weather> findAllByCityWhereLastUpdatedTimeGreaterThan(City city, Date time);
 }
